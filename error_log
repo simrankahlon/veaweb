@@ -1,0 +1,21 @@
+[07-Nov-2016 16:05:32 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:05:33 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:05:34 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:05:35 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:06:46 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:06:47 Etc/GMT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/perfebig/public_html/vikramsenglishacademy/index.php on line 52
+[07-Nov-2016 16:24:09 Etc/GMT] PHP Warning:  copy(https://getcomposer.org/installer): failed to open stream: Connection timed out in Command line code on line 1
+[07-Nov-2016 16:24:35 Etc/GMT] PHP Warning:  hash_file(composer-setup.php): failed to open stream: No such file or directory in Command line code on line 1
+[07-Nov-2016 16:24:35 Etc/GMT] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1
+[07-Nov-2016 16:25:47 Etc/GMT] PHP Warning:  copy(https://getcomposer.org/installer): failed to open stream: Connection timed out in Command line code on line 1
+[07-Nov-2016 16:26:06 Etc/GMT] PHP Warning:  hash_file(composer-setup.php): failed to open stream: No such file or directory in Command line code on line 1
+[07-Nov-2016 16:26:06 Etc/GMT] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1
+[07-Nov-2016 16:27:34 Etc/GMT] PHP Warning:  copy(https://getcomposer.org/installer): failed to open stream: Connection timed out in Command line code on line 1
+[07-Nov-2016 16:28:24 Etc/GMT] PHP Warning:  hash_file(composer-setup.php): failed to open stream: No such file or directory in Command line code on line 1
+[07-Nov-2016 16:28:24 Etc/GMT] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1
+[07-Nov-2016 16:36:17 Etc/GMT] PHP Warning:  copy(https://getcomposer.org/installer): failed to open stream: Connection timed out in Command line code on line 1
+[07-Nov-2016 16:37:39 Etc/GMT] PHP Warning:  hash_file(composer-setup.php): failed to open stream: No such file or directory in Command line code on line 1
+[07-Nov-2016 16:37:39 Etc/GMT] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1
+[08-Nov-2016 15:31:46 Etc/GMT] PHP Warning:  copy(https://getcomposer.org/installer): failed to open stream: Connection timed out in Command line code on line 1
+[08-Nov-2016 15:32:27 Etc/GMT] PHP Warning:  hash_file(composer-setup.php): failed to open stream: No such file or directory in Command line code on line 1
+[08-Nov-2016 15:32:27 Etc/GMT] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1
