@@ -1,0 +1,145 @@
+
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="row">
+    <div class="slide">
+        <blockquote>
+            <p><a href="#"><img src="<?php echo asset('front-theme/images/evemtimg.jpg'); ?>" width="1582" height="298"></a></p>
+        </blockquote>
+    </div>
+</div>
+<section></section>
+<section>
+    <div class="col-xs-6">
+        <div class="col-md-5">
+            <div class="row bodytext">
+                <h1><span class="blue">EXPERIENTIAL </span>&nbsp;LEARNING AT ITS BEST</h1><br>
+                <br>
+                <br>
+
+                <p>To facilitate the learning process, the students of our institute were introduced to their text book<br>
+                    heroes 
+                    Vishnu Zende and 
+                    Mohammed Taufeek Sheikh the real heroes of 26/11 attacks who helped save <br>
+                    many lives with their wit and valour. 
+                    The interaction proved really valuable for the students to know <br>
+                    about the reality of the day.<br>
+                    <br>
+                </p>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/feli1.jpg'); ?>" width="331" height="185"></div>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/feli8.jpg'); ?>" width="331" height="185"></div>
+
+
+            </div>
+            <div class="clear"></div>
+            <div class="row bodytext">
+                <h1><span class="blue">FELICITATION </span></h1><br>
+                <br>
+                <br>
+
+                <p>A felicitation programme is conducted to honour the students who excel at the ICSE board exam.<br>
+                    This goes a long way in encouraging our current students to be the champions of tomorrow with<br>
+                    the glittering customized trophies in their hands.<br>
+                    <br>
+                </p>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/feli4.jpg'); ?>" width="331" height="185"></div>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/feli7.jpg'); ?>" width="331" height="185"></div>
+
+
+            </div>
+
+            <div class="row bodytext">
+                <h1><span class="blue">WEBSITE &nbsp;LAUNCH <br>
+                        <br>
+                    </span></h1>
+
+                <br>
+
+
+                <p>
+                    <br>
+                    <br>
+                    <br>
+                    The launch of the website of Vikram's English Academy was done by one of <br>
+                    India's best selling English writers and an ex student of Vikramjit Sir , Sudeep Nagarkar.<br>
+                    <br>
+                    <br>
+                </p>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/launch.jpg'); ?>" width="331" height="185"></div>
+                <div class="col-md-3"><img src="<?php echo asset('front-theme/images/launch2.jpg'); ?>" width="331" height="185"></div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-4 mar-tb">
+            <div class="sidebar"> <img src="<?php echo asset('front-theme/images/sidebarimg.jpg'); ?>" width="310" height="171">
+                <p> We encourage originality <br>
+                    of thoughts in  young minds. <br>
+                    The creative thoughts in their inspired moments are stimulated to help them in the writing skills <br>
+                    <br>
+                </p>
+            </div>
+            <div class="newsevent">
+                <ul>
+                    <li><strong><br>
+                            <span class="blue2">TOPPER'S TALK</span></strong><br>
+                    </li>
+                    <div class="red8">Janvi Bohra, 1st Ranker of NES</div>
+                    <div class="video bodytext"> <p>Vikramjit Sir is that angel and friend who guides his students or rather his children like a polestar making their herculean tasks a cakewalk. English was not my cup of tea but because of Sir's hardwork and faith, it became my strength. The test series and prelims were taken in such a manner that it covered all topics and gave us time to focus on every chapter.<br>
+                            <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a></p></div>
+                    <div class="red8">Maria Antony, 2nd in English </div>
+                    <div class="video bodytext"><p>Over the last two years Maria has grown to enjoy Shakespeare and literature, and her performance is a testimony to it. The classes were a happy mix of academic rigour and fun with consecutive tests from October ensuring that she faced her board papers with confidence. </p>
+                        <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="newsevent">
+                <ul>
+                    <div class="video"> </div>
+                    <div class="video"> </div>
+                </ul>
+            </div>
+            <div class="newsevent">
+                <ul>
+                    <div class="video"> </div>
+                    <div class="video"> </div>
+                </ul>
+            </div>
+        </div>
+    </div>	
+    <article>
+        <div class=" col-xs-6">
+            <div class="row">
+                <div class="testititel">STUDENTS' TESTIMONIALS</div>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Janvi Bohra, 1st Ranker of NES, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <li>
+                        <p><strong><img src="<?php echo asset('front-theme/images/janvibhora.jpg'); ?>" width="132" height="133" class="leftimg"></strong>Vikramjit Sir is that  angel and friend who guides his students or rather his children like a polestar  making their herculean tasks a cakewalk. English was not my cup of tea but  because of Sir's hardwork and faith, it became my strength.</p>
+                        <br>
+                        <br>
+                        <span class="readmore2"><a href="<?php echo URL::to('/testimonials'); ?>">Read full testimonial</a></span></li>
+                </ul>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Maria Antony, 2nd in English in JK Singhania School, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <ul>
+                        <li><strong><img src="<?php echo asset('front-theme/images/mariya.jpg'); ?>" width="132" height="133" class="leftimg"></strong>I have been associated with Vikram&rsquo;s English Academy since the ninth  standard. It's been something I've never experienced before. There was not a  single lecture where I dozed off. Sir makes sure that every child is present  not only physically but also mentally.<br>
+                            <br>
+                            <span class="readmore2"><a href="<?php echo URL::to('/testimonials'); ?>">Read full testimonial</a></span></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+</section>
+<!--end wrap -->
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.master-front', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

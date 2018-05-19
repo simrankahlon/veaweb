@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/xampp/htdocs/school/vikram/resources/views/essay/create.blade.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/app/Http/Controllers/EssayController.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/resources/views/content/edit.blade.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/app/Http/helpers.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/app/Http/Controllers/WordController.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/resources/views/word/edit.blade.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/resources/views/essay/edit.blade.php</file>
+            <file>file:/D:/xampp/htdocs/school/vikram/app/Http/routes.php</file>
+        </group>
+    </open-files>
+</project-private>

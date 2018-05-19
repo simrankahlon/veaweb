@@ -1,0 +1,130 @@
+<?php $__env->startSection('title','Word | List'); ?>
+<?php $__env->startSection('styles'); ?>
+<style>.mar-top { margin-top:30px; }
+    .error { line-height: 2;padding: 0 0 0 20px; } .fileupload{ display: none;} </style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="container main-c">
+</div>
+<div class="container main-content">
+    <div class="row">
+        <?php if(Session::has('message')): ?>
+        <div class="clearfix alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <?php echo e(Session::get('message')); ?>
+
+        </div>
+        <?php endif; ?>
+        <?php if($errors->has()): ?>
+        <div class="alert alert-danger">
+            <?php foreach($errors->all() as $error): ?>
+            <p><?php echo $error; ?></p>
+            <?php endforeach; ?>
+        </div>
+        <?php endif; ?>
+    </div>
+    <div class="errormsg"></div>
+          <?php echo Form::open(array('url' => 'word/update/'.$word->id,'method'=>'POST','files' => true, 'class'=>'','id'=>'wordform')); ?>
+
+    <div class="row">
+        <div class="col-md-2">
+               <?php echo Form::label('Standard', 'Standard:', array('class' => '')); ?>
+
+        </div>
+         <div class="col-md-8">
+            <div class="form-group">
+                <?php echo Form::select('std_id', $standard,$word->std_id,array('class' => 'form-control','required'=>"required",'id'=>"standard")); ?>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+               <?php echo Form::label('title', 'Title:', array('class' => '')); ?>
+
+        </div>
+         <div class="col-md-8">
+            <div class="form-group">
+                <?php echo Form::text('title', $word->title, array('class' => 'form-control','required'=>"required",'id'=>"title", 'placeholder'=>"title")); ?>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+              <?php echo Form::label('Upload Document', 'Upload Document:', array('class' => '')); ?>
+
+              <?php echo Form::label('file_word', 'Browse:', array('class' => 'sr-only')); ?>
+
+        </div>
+        <?php if($word->worddoc!=''): ?>
+        <div class="col-md-8 col-xs-8 docupload">
+            <div class="form-group">  
+               <a target="_blank" href="<?php echo e(URL::to('uploads/word/' . $word->worddoc)); ?>"><img width="25" height="25" src="<?php echo e(URL::to('custom-theme/img/word.png')); ?>"></a>
+               <input type="button" class="deletefile" data-id="<?php echo $word->id; ?>" data-img="<?php echo $word->worddoc; ?>" value="Delete File">
+            </div>
+        </div> 
+          <div class="col-md-8 col-xs-8 fileupload">
+            <div class="form-group">               
+                 <?php echo Form::file('worddoc'); ?>
+
+            </div>
+        </div>
+        <?php else: ?>
+        <div class="col-md-8 col-xs-8">
+            <div class="form-group">               
+                 <?php echo Form::file('worddoc'); ?>
+
+            </div>
+        </div>
+        <?php endif; ?>        
+    </div>
+    <div class="row">
+        <div class="main-content-footer text-center">
+            <?php echo link_to('word/', $title = 'Cancel', $attributes = array('class'=>'btn button-cancel'), $secure = null); ?>       
+            <?php echo Form::submit('Update Word', array('class' => 'btn button-green','id'=>'submit_job')); ?>
+
+        </div>
+    </div>
+    <?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript" charset="utf8" src="<?php echo asset('custom-theme/js/vendor/tinymce/tinymce.min.js'); ?>"></script>
+<script type="text/javascript">
+    tinymce.init({
+        selector: "textarea",
+        plugins: ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
+        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+         
+        $(".deletefile").on("click",function(e){
+            e.preventDefault();
+            var img = $(this).data("img");
+            var id = $(this).data("id");
+            var base_url = '<?php echo e(url()); ?>';
+            var url =  base_url + '/word/'+ id +'/delete_single_image';
+            $.ajax({
+                    type : "GET",
+                    url  : url,                  
+                    success : function(response) {
+                        if(response==1) {
+                            $(".docupload").hide();
+                            $(".fileupload").show();
+                        }
+                        else
+                        {
+                            //$(".fileupload").show();
+                        }
+                    }
+            });
+        });
+    });
+</script>    
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master-admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

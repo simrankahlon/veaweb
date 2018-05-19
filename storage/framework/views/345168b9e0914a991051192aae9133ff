@@ -1,0 +1,94 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+            <div class="row">
+                <div class="slide">
+                    <blockquote>
+                        <p><a href="#"><img src="<?php echo asset('front-theme/images/conta.jpg'); ?>" width="1582" height="298"></a></p>
+                    </blockquote>
+                </div>
+            </div>
+            <section></section>
+            <section>
+                <div class="col-xs-6">
+                    <div class="col-md-5">
+                        <div class="row bodytext">
+                            <h1><span class="blue">Download</h1><br>
+                            <br>
+                           
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-md-4 mar-tb">
+                        <div class="sidebar"> <img src="<?php echo asset('front-theme/images/sidebarimg.jpg'); ?>" width="310" height="171">
+                            <p> We encourage originality <br>
+                                of thoughts in  young minds. <br>
+                                The creative thoughts in their inspired moments are stimulated to help them in the writing skills <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <li><strong><br>
+                                        <span class="blue2">TOPPER'S TALK</span></strong><br>
+                                </li>
+                                <div class="red8">Janvi Bohra, 1st Ranker of NES</div>
+                                <div class="video bodytext"> <p>Vikramjit Sir is that angel and friend who guides his students or rather his children like a polestar making their herculean tasks a cakewalk. English was not my cup of tea but because of Sir's hardwork and faith, it became my strength. The test series and prelims were taken in such a manner that it covered all topics and gave us time to focus on every chapter.<br>
+                                        <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a></p></div>
+                                <div class="red8">Maria Antony, 2nd in English </div>
+                                <div class="video bodytext"><p>Over the last two years Maria has grown to enjoy Shakespeare and literature, and her performance is a testimony to it. The classes were a happy mix of academic rigour and fun with consecutive tests from October ensuring that she faced her board papers with confidence. </p>
+                                    <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <div class="video"> </div>
+                                <div class="video"> </div>
+                            </ul>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <div class="video"> </div>
+                                <div class="video"> </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>	
+                   <article>
+<div class=" col-xs-6">
+    <div class="row">
+      <div class="testititel">STUDENTS' TESTIMONIALS</div>
+    </div>
+    <div class="testi">
+      <h2 class="bodytext2"><strong>NANDITA SHAH 96 in English at ICSE 2015</strong></h2>
+      <ul>
+        <li>
+          <p><strong><img src="<?php echo asset('front-theme/images/nanditashah.jpg'); ?>" width="132" height="133" class="leftimg"></strong>I had joined  Vikram&rsquo;s English academy in grade ninth and it has been a unique learning  experience for me. I could have not reached 96 without Vikramjit Sir&rsquo;s guidance.<br>
+            <br>
+            Vikramjit  sir is more than a teacher. He is a mentor, a friend , a father figure. </p>
+          <br>
+          <br>
+          <span class="readmore2"><a href="<?php echo URL::to('/testimonials'); ?>">Read full testimonial</a></span></li>
+      </ul>
+    </div>
+    <div class="testi">
+      <h2 class="bodytext2"><strong>SAKSHI KALE 95 in English at ICSE 2015</strong></h2>
+      <ul>
+        <ul>
+          <li><strong><img src="<?php echo asset('front-theme/images/sakshikale.jpg'); ?>" width="132" height="133" class="leftimg"></strong>Vikram  sirs English academy is a beautiful garden   of budding English students. It is like a home full of learning, fun, emotions,  memories and Vikramjit Sir himself…which makes the family complete. I became a  part of this academy in 8th standard, when I used to think that English is not  my cup of tea...but learning at Vikram English Academy made me confident about  the subject.<br>
+            <br>
+            <span class="readmore2"><a href="<?php echo URL::to('/testimonials'); ?>">Read full testimonial</a></span></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+</article>
+            </section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master-front', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
