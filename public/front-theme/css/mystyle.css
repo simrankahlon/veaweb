@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0px; padding:0px;}
+body { font-family:Verdana, Geneva, sans-serif; font-size:12px; font-weight:normal; text-align:justify; color:#666;}
+h1, h2, h3, h4, h5, h6 {margin:0px; padding:0px;}
+img { margin:0px; padding:0px; border:none; outline:none;}
+.clearfix { clear:both;}
+.logo {margin:0px; padding:0px; float:left;}
+
