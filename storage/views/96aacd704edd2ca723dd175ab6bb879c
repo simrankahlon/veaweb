@@ -1,0 +1,77 @@
+<?php $__env->startSection('title','Content | List'); ?>
+<?php $__env->startSection('styles'); ?>
+<style>.mar-top { margin-top:30px; }
+    .error { line-height: 2;padding: 0 0 0 20px; } </style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="container main-c">
+</div>
+<div class="container main-content">
+    <div class="row">
+        <?php if(Session::has('message')): ?>
+        <div class="clearfix alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <?php echo e(Session::get('message')); ?>
+
+        </div>
+        <?php endif; ?>
+        <?php if($errors->has()): ?>
+        <div class="alert alert-danger">
+            <?php foreach($errors->all() as $error): ?>
+            <p><?php echo $error; ?></p>
+            <?php endforeach; ?>
+        </div>
+        <?php endif; ?>
+    </div>
+    <div class="errormsg"></div>
+        <?php echo Form::open(array('url' => 'content/store','method'=>'POST', 'class'=>'','id'=>'contentform')); ?>
+
+    <div class="row">
+        <div class="col-md-2">
+               <?php echo Form::label('title', 'Title:', array('class' => '')); ?>
+
+        </div>
+         <div class="col-md-8">
+            <div class="form-group">
+                <?php echo Form::text('title', null, array('class' => 'form-control','required'=>"required",'id'=>"title", 'placeholder'=>"title")); ?>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+             <?php echo Form::label('content', 'Content:', array('class' => '')); ?>
+
+        </div>
+        <div class="col-md-8 col-xs-8">
+            <div class="form-group">               
+                <textarea name='paraone' rows="10" cols="15" class="form-control">
+                </textarea>
+            </div>
+        </div>      
+    </div>
+    <div class="row">
+        <div class="main-content-footer text-center">
+            <?php echo link_to('content/', $title = 'Cancel', $attributes = array('class'=>'btn button-cancel'), $secure = null); ?>       
+            <?php echo Form::submit('Create Content', array('class' => 'btn button-green','id'=>'submit_job')); ?>
+
+        </div>
+    </div>
+    <?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+<!--
+<script type="text/javascript" charset="utf8" src="<?php echo asset('custom-theme/js/vendor/tinymce/tinymce.min.js'); ?>"></script>
+<script type="text/javascript">
+    tinymce.init({
+        selector: "textarea",
+        plugins: ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
+        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+    });
+</script> -->
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master-admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

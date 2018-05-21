@@ -1,0 +1,56 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<style type="text/css">
+
+    #ans {
+        color: #000;
+        display: none;
+        margin: 10px;
+    }
+    .edit {
+        display: block !important;
+    }
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="col-md-12">
+                <section>
+                    <div class="col-xs-6">
+                        <div class="lesson-id"><br>
+                            <ul>
+                                <li><a href="<?php echo URL::to('students/essay/8/'); ?>">Standard 8 </a></li>
+                                <li><a href="<?php echo URL::to('students/essay/9/'); ?>">Standard 9 </a></li>
+                                <li><a href="<?php echo URL::to('students/essay/10/'); ?>">Standard 10 </a></li>
+                            </ul>
+                        </div>
+                    <div class="row bodytext word-download"><ul>
+                            <ul>
+                               <?php if(!empty($essay)): ?>  
+                               <?php foreach($essay as $w): ?>
+                               <li class="js_corporate current">
+                                    <a target="_blank" href="<?php echo e(URL::to('uploads/word/' . $w->essaydoc)); ?>"><br>
+                                            <img src="<?php echo asset('front-theme/images/download-icon.jpg'); ?>" width="72" height="73" alt="Download Document" title="Download Document"><br>
+                                            <?php echo $w->title; ?>&nbsp;&nbsp;&nbsp;  <?php echo e(date('d-m-Y',strtotime($w->created_at))); ?> 
+                                        </a>                     
+                               </li>                               
+                               <?php endforeach; ?>
+                               <?php else: ?>
+                                No record exists
+
+                               <?php endif; ?>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>	
+            </section>
+          </div>
+        </div>	
+    </div>
+</div>   
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.web-admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

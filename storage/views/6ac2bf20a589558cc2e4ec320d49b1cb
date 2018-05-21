@@ -1,0 +1,181 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+            <div class="row">
+
+                <div class="slide">
+                    <blockquote>
+                        <p><a href="#"><img src="<?php echo asset('front-theme/images/eventsimg.jpg'); ?>" width="1582" height="298"></a></p>
+                    </blockquote>
+                </div>
+            </div>
+            <section></section>
+            <section>
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="row bodytext">
+                            <h1><span class="blue">RESULTS</span></h1><br>
+                            <br>
+                            <br>
+                            <h1>&nbsp;</h1>
+                            <div class="lresult"><img src="<?php echo asset('front-theme/images/result5.jpg'); ?>" width="407" height="707"></div>
+
+                            <div class="lresult2"></div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p class="text3">
+                            </p>
+
+
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>	
+
+ <article>
+        <div class=" col-xs-6">
+            <div class="row">
+                <div class="testititel">STUDENTS' TESTIMONIALS</div>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Janvi Bohra, 1st Ranker of NES, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <li>
+                        <p><strong><img src="<?php echo asset('front-theme/images/janvibhora.jpg'); ?>" width="132" height="133" class="leftimg"></strong>Vikramjit Sir is that  angel and friend who guides his students or rather his children like a polestar  making their herculean tasks a cakewalk. English was not my cup of tea but  because of Sir's hardwork and faith, it became my strength.</p>
+                        <br>
+                        <br>
+                        <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                </ul>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Maria Antony, 2nd in English in JK Singhania School, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <ul>
+                        <li><strong><img src="<?php echo asset('front-theme/images/mariya.jpg'); ?>" width="132" height="133" class="leftimg"></strong>I have been associated with Vikram&rsquo;s English Academy since the ninth  standard. It's been something I've never experienced before. There was not a  single lecture where I dozed off. Sir makes sure that every child is present  not only physically but also mentally.<br>
+                            <br>
+                            <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </article>
+            </section>
+             <?php $__env->stopSection(); ?>
+
+
+
+
+
+        <script>
+            /*****
+             * Carousel control
+             */
+            var Carousel = function (elId, mode) {
+                var wrapper = document.getElementById(elId);
+                var innerEl = wrapper.getElementsByClassName('carousel-inner')[0];
+                var leftButton = wrapper.getElementsByClassName('carousel-left')[0];
+                var rightButton = wrapper.getElementsByClassName('carousel-right')[0];
+                var items = wrapper.getElementsByClassName('item');
+
+                this.carouselSize = items.length;
+                this.itemWidth = null;
+                this.itemOuterWidth = null;
+                this.currentStep = 0;
+                this.itemsAtOnce = 3;
+                this.minItemWidth = 200;
+                this.position = innerEl.style;
+                this.mode = mode;
+
+                this.init = function (mode) {
+                    this.itemsAtOnce = mode;
+                    this.calcWidth(wrapper, innerEl, items);
+                    cb_addEventListener(leftButton, 'click', this.goLeft.bind(this));
+                    cb_addEventListener(rightButton, 'click', this.goRight.bind(this));
+                    cb_addEventListener(window, 'resize', this.calcWidth.bind(this, wrapper, innerEl, items));
+                };
+                return this.init(mode);
+            };
+
+            Carousel.prototype = {
+                goLeft: function (e) {
+                    e.preventDefault();
+                    if (this.currentStep) {
+                        --this.currentStep;
+                    } else {
+                        this.currentStep = this.carouselSize - this.itemsAtOnce;
+                    }
+                    this.makeStep(this.currentStep);
+                    return false;
+                },
+                goRight: function (e) {
+                    e.preventDefault();
+                    if (this.currentStep < (this.carouselSize - this.itemsAtOnce)) {
+                        ++this.currentStep;
+                    } else {
+                        this.currentStep = 0;
+                    }
+                    this.makeStep(this.currentStep);
+                    return false;
+                },
+                makeStep: function (step) {
+                    this.position.left = -(this.itemOuterWidth * step) + 'px';
+                },
+                calcWidth: function (wrapper, innerEl, items) {
+                    this.beResponsive();
+
+                    var itemStyle = window.getComputedStyle(items[0]);
+                    var innerElStyle = innerEl.style;
+                    var carouselLength = this.carouselSize;
+                    var wrapWidth = wrapper.offsetWidth - parseInt(itemStyle.marginRight, 10) * (this.itemsAtOnce + 1);
+
+                    innerElStyle.display = 'none';
+                    this.itemWidth = wrapWidth / this.itemsAtOnce;
+                    this.itemOuterWidth = this.itemWidth + parseInt(itemStyle.marginRight, 10);
+                    for (i = 0; i < carouselLength; i++) {
+                        items[i].style.width = this.itemWidth + 'px';
+                    }
+                    innerElStyle.width = this.itemOuterWidth * this.carouselSize + 'px';
+                    innerElStyle.display = 'block';
+                },
+                beResponsive: function () {
+                    var winWidth = window.innerWidth;
+                    if (winWidth >= 650 && winWidth < 950 && this.itemsAtOnce >= 2) {
+                        this.itemsAtOnce = 2;
+                    } else if (winWidth < 650) {
+                        this.itemsAtOnce = 1;
+                    } else {
+                        this.itemsAtOnce = this.mode;
+                    }
+                }
+            }
+            /**
+             * Cross-browser Event Listener
+             **/
+            function cb_addEventListener(obj, evt, fnc) {
+                if (obj && obj.addEventListener) {
+                    obj.addEventListener(evt, fnc, false);
+                    return true;
+                } else if (obj && obj.attachEvent) {
+                    return obj.attachEvent('on' + evt, fnc);
+                }
+                return false;
+            }
+
+        //Initializing carousel
+            if (document.getElementById('products')) {
+                var productsCarousel = new Carousel('products', 3);
+            }
+            if (document.getElementById('products2')) {
+                var productsCarousel = new Carousel('products2', 2);
+            }
+            if (document.getElementById('products3')) {
+                var productsCarousel = new Carousel('products3', 1);
+            }
+        </script>
+
+
+
+
+<?php echo $__env->make('layout.master-front', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

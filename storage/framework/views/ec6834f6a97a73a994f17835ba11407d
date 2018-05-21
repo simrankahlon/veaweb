@@ -1,0 +1,29 @@
+<?php $__env->startSection('title','Dashboard'); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<!-- Main content -->
+<div class="container main-content main-content-header-eff">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="main-content-title">Welcome Admin</h3>
+            <ol class="breadcrumb">
+                <li class="active">Home</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="">Dashboard</h4>
+            <?php if(Session::has('message')): ?>
+                <div class="clearfix alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+                    <?php echo e(Session::get('message')); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layout.master-admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

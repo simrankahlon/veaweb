@@ -1,0 +1,136 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+            <div class="row">
+                <div class="slide">
+                    <blockquote>
+                        <p><a href="#"><img src="<?php echo asset('front-theme/images/conta.jpg'); ?>" width="1582" height="298"></a></p>
+                    </blockquote>
+                </div>
+            </div>
+            <section></section>
+            <section>
+                <div class="col-xs-6">
+                    <div class="col-md-5">
+                        <div class="row bodytext">
+                            <h1><span class="blue">CONTACT  </span>&nbsp;US</h1><br>
+                            <br>
+                            <div class="testi2 bodytext">
+                                <p><strong>VIKRAM'S ENGLISH ACADEMY </strong><br>
+                                    202, Kailash Commercial Complex, Above Jolly Studio, <br>
+                                    Opp Dreams Mall, LBS Marg, <br>
+                                    Bhandup West<br>
+                                    <strong>Phone: 9769246667</strong><br>
+                                    <br>
+                                    <br>
+                                    <strong>VIKRAM'S ENGLISH ACADEMY </strong><br>
+                                </p>
+                                <p>305, Jay Commercial Plaza, M G. Road, <br>
+                                    Mulund (w), Mumbai 80. </p>
+                                <p><strong>Phone:5602727</strong> <strong>/ 9833 602727</strong></p>
+                                <div class="contact">				
+                                    <div class="contact_info">
+                                        <h2 class="blue">&nbsp;</h2>
+                                        <div class="map">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form">
+                                        <div class="content">
+                                            <h2 class="blue"><span class="titletext">Enquiry form</span></h2>
+                                        </div>
+                                        <form method="post" action="contact-post.html">
+                                            <div>
+                                                <span><label>Name</label></span>
+                                                <span><input name="userName" type="text" class="textbox"></span>
+                                            </div>
+                                            <div>
+                                                <span><label>E-mail</label></span>
+                                                <span><input name="userEmail" type="text" class="textbox"></span>
+                                            </div>
+                                            <div>
+                                                <span><label>Mobile</label></span>
+                                                <span><input name="userPhone" type="text" class="textbox"></span>
+                                            </div>
+                                            <div>
+                                                <span><label>Subject</label></span>
+                                                <span><textarea name="userMsg"> </textarea></span>
+                                            </div>
+                                            <div>
+                                                <span><input type="submit" class="" value="Submit us"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="clear"> </div>		
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-md-4 mar-tb">
+                        <div class="sidebar"> <img src="<?php echo asset('front-theme/images/sidebarimg.jpg'); ?>" width="310" height="171">
+                            <p> We encourage originality <br>
+                                of thoughts in  young minds. <br>
+                                The creative thoughts in their inspired moments are stimulated to help them in the writing skills <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <li><strong><br>
+                                        <span class="blue2">TOPPER'S TALK</span></strong><br>
+                                </li>
+                                <div class="red8">Janvi Bohra, 1st Ranker of NES</div>
+                                <div class="video bodytext"> <p>Vikramjit Sir is that angel and friend who guides his students or rather his children like a polestar making their herculean tasks a cakewalk. English was not my cup of tea but because of Sir's hardwork and faith, it became my strength. The test series and prelims were taken in such a manner that it covered all topics and gave us time to focus on every chapter.<br>
+                                        <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a></p></div>
+                                <div class="red8">Maria Antony, 2nd in English </div>
+                                <div class="video bodytext"><p>Over the last two years Maria has grown to enjoy Shakespeare and literature, and her performance is a testimony to it. The classes were a happy mix of academic rigour and fun with consecutive tests from October ensuring that she faced her board papers with confidence. </p>
+                                    <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <div class="video"> </div>
+                                <div class="video"> </div>
+                            </ul>
+                        </div>
+                        <div class="newsevent">
+                            <ul>
+                                <div class="video"> </div>
+                                <div class="video"> </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <article>
+        <div class=" col-xs-6">
+            <div class="row">
+                <div class="testititel">STUDENTS' TESTIMONIALS</div>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Janvi Bohra, 1st Ranker of NES, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <li>
+                        <p><strong><img src="<?php echo asset('front-theme/images/janvibhora.jpg'); ?>" width="132" height="133" class="leftimg"></strong>Vikramjit Sir is that  angel and friend who guides his students or rather his children like a polestar  making their herculean tasks a cakewalk. English was not my cup of tea but  because of Sir's hardwork and faith, it became my strength.</p>
+                        <br>
+                        <br>
+                        <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                </ul>
+            </div>
+            <div class="testi">
+                <h2 class="bodytext2"><strong>Maria Antony, 2nd in English in JK Singhania School, 96 in English at ICSE 2016.</strong></h2>
+                <ul>
+                    <ul>
+                        <li><strong><img src="<?php echo asset('front-theme/images/mariya.jpg'); ?>" width="132" height="133" class="leftimg"></strong>I have been associated with Vikram&rsquo;s English Academy since the ninth  standard. It's been something I've never experienced before. There was not a  single lecture where I dozed off. Sir makes sure that every child is present  not only physically but also mentally.<br>
+                            <br>
+                            <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </article>
+            </section>
+            <!--end wrap -->
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master-front', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

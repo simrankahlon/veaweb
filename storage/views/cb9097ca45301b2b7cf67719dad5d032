@@ -1,0 +1,58 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="row">
+    <div class="slide">
+        
+    </div>
+</div>
+<section></section>
+<section>
+    <div class="col-xs-6">
+        <div class="col-xs-6">
+            <div id="grammerQ" style="display:block;" class="row bodytext">              
+               <?php echo Form::open(array('url' => 'studentlogin','method'=>'POST', 'class'=>'')); ?>
+
+                    <input type="hidden" name="action_type" value="login" />
+                    <p class="formwidth"> UserName : <input type="text" name="username" /></p>
+                    <p class="formwidth"> Password : <input type="password" name="password" /></p>
+                    <p class="formwidth"> <input type="submit" value="Submit" id="submit" class="submit_button btn btn-primary" /></p>
+                  <?php echo Form::close(); ?>
+
+            </div>
+            <div class="clear"></div>
+        </div>	
+    </div>	
+ <article>
+                            <div class=" col-xs-6">
+                                <div class="row">
+                                    <div class="testititel">STUDENTS' TESTIMONIALS</div>
+                                </div>
+                                <div class="testi">
+                                    <h2 class="bodytext2"><strong>Janvi Bohra, 1st Ranker of NES, 96 in English at ICSE 2016.</strong></h2>
+                                    <ul>
+                                        <li>
+                                            <p><strong><img src="<?php echo asset('front-theme/images/janvibhora.jpg'); ?>" width="132" height="133" class="leftimg"></strong>Vikramjit Sir is that  angel and friend who guides his students or rather his children like a polestar  making their herculean tasks a cakewalk. English was not my cup of tea but  because of Sir's hardwork and faith, it became my strength.</p>
+                                            <br>
+                                            <br>
+                                            <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                                    </ul>
+                                </div>
+                                <div class="testi">
+                                    <h2 class="bodytext2"><strong>Maria Antony, 2nd in English in JK Singhania School, 96 in English at ICSE 2016.</strong></h2>
+                                    <ul>
+                                        <ul>
+                                            <li><strong><img src="<?php echo asset('front-theme/images/mariya.jpg'); ?>" width="132" height="133" class="leftimg"></strong>I have been associated with Vikram&rsquo;s English Academy since the ninth  standard. It's been something I've never experienced before. There was not a  single lecture where I dozed off. Sir makes sure that every child is present  not only physically but also mentally.<br>
+                                                <br>
+                                                <span class="readmore2"><a href="testimonials.html">Read full testimonial</a></span></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+</section>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.master-front', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

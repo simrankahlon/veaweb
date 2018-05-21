@@ -1,0 +1,39 @@
+<?php $__env->startSection('title','Home'); ?>
+<?php $__env->startSection('styles'); ?>
+<style>
+   
+.lesson-id ul li a {
+    background: #dfd7d7 none repeat scroll 0 0;
+    color: #000;
+    padding: 5px;
+    text-decoration: none;
+}
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bodycontent'); ?>
+<div class="container-fluid">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="col-md-5">
+                <div class="lesson-id row bodytext">
+                    <br>
+                    <?php $__empty_1 = true; foreach($list as $l): $__empty_1 = false; ?>  
+                    <ul>                              
+                      <li>
+                      <?php echo link_to('/lesson/'.$l->id, $titlee=$l->title, $attributes = array('class'=>''), $secure = null); ?>
+
+                      </li>
+                    </ul>
+                    <?php endforeach; if ($__empty_1): ?>
+                    <ul>No jobs found!</ul>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>	
+</div>
+</div> 
+    </div>
+ <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.web-admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
