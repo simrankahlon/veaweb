@@ -83,8 +83,8 @@
                             <div id="slider-wrap">
                                 <div class="flicker-example" data-block-text="false">
                                     <ul>
-                                        <li data-background="{!!asset('front-theme/img/slide1.jpg') !!}"></li>
-                                        <li data-background="{!!asset('front-theme/img/slide2.jpg') !!}"></li>
+                                        <li data-background="{!!asset('front-theme/img/img1_2018.jpg') !!}"></li>
+                                        <li data-background="{!!asset('front-theme/img/img2_2018.jpg') !!}"></li>
                                         <li data-background="{!!asset('front-theme/img/slide3.jpg') !!}"></li>
                                         <li data-background="{!!asset('front-theme/img/slide4.jpg') !!}"></li>
                                         <li data-background="{!!asset('front-theme/img/slide5.jpg') !!}"></li>
