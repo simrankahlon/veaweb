@@ -99,7 +99,7 @@
                                 <div class="col-xs-6">
                                     <div class="col-md-3">
                                         <div class="download">
-                                            <h1 class="whitetext "><a href="{!!asset('front-theme/pdf/prospectus.pdf') !!}" target="_blank"><img src="{!!asset('front-theme/images/pdf.jpg') !!}" width="56" height="42">Download Prospectus</a></h1>
+                                            <h1 class="whitetext "><a href="{!!asset('front-theme/pdf/vikram sir_prospectus_2018.pdf') !!}" target="_blank"><img src="{!!asset('front-theme/images/pdf.jpg') !!}" width="56" height="42">Download Prospectus</a></h1>
                                         </div>    
                                     </div>
                                     <div class="col-md-3">

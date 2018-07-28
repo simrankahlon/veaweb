@@ -44,14 +44,30 @@
                     the glittering customized trophies in their hands.<br>
                     <br>
                 </p>
-                <div class="col-md-3"><img src="{!!asset('front-theme/images/feli4.jpg') !!}" width="331" height="185"></div>
-                <div class="col-md-3"><img src="{!!asset('front-theme/images/feli7.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli10.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli11.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli13.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli15.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli14.jpg') !!}" width="331" height="185"></div>
-				<div class="col-md-3"><img src="{!!asset('front-theme/images/feli12.jpg') !!}" width="331" height="185"></div>
+                <div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel1.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+                <div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel2.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel3.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel4.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel5.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel6.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel7.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
+				<div class="col-md-3">
+                    <img src="{!!asset('front-theme/images/2018_fel8.jpg') !!}" width="331" height="185" style="border:7px solid #003366">
+                </div>
 
 
             </div>

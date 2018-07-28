@@ -21,7 +21,7 @@
                     <ul>
                         <li><img src="{!!asset('front-theme/images/vedanti.jpg') !!}" width="132" height="133" class="leftimg">
                         
-                           	It has been a great year being a student of Vikram’s English Academy.I have received constant positive vibes to perform well. Vikramjit Sir is a great mentor as well as a fab teacher. He was there to help me clear all my doubts a night before the board exams even at 2 am. The regular test series made me study regularly, perform well and boost up my confidence. English was not my cup of tea but the motivation, support and guidance that I received from the Academy helped me a lot to work hard, pass out with flying colours and keep up to the expectations of everyone. Thank You VEA.<br>
+                           	It hassfgfv been a great year being a student of Vikram’s English Academy.I have received constant positive vibes to perform well. Vikramjit Sir is a great mentor as well as a fab teacher. He was there to help me clear all my doubts a night before the board exams even at 2 am. The regular test series made me study regularly, perform well and boost up my confidence. English was not my cup of tea but the motivation, support and guidance that I received from the Academy helped me a lot to work hard, pass out with flying colours and keep up to the expectations of everyone. Thank You VEA.<br>
                             <br>
                             <br><br>
                            <strong>Vedanti Kshirsagar, 1st in PPS In Engish, in the Entire Zone (Schools from Vikhroli to Thane).</strong><br>

@@ -18,16 +18,17 @@
                     <div style="width:10%;text-align:center;margin:auto;"><h1><span class="blue">OUR RESULTS</span> </h1></div></br></br></br></br>&nbsp;
                 
 				<div style="clear:both"></div>
-				<div style="width:5%;float:left;">&nbsp;</div>
-				<div style="width:30%;float:left;">     
-				<img src="{!!asset('front-theme/images/result5.jpg') !!}" width="407" height="707">
-				</div>				
-				<div style="width:30%;float:left;padding:10px;">     
-                  <img src="{!!asset('front-theme/images/difference_chart.jpg') !!}" width="100%" height="707">
+				<div style="width:15%;float:left;">&nbsp;</div>
+				<div style="width:40%;float:left;">     
+				<img src="{!!asset('front-theme/images/2018_img2.jpg') !!}" width="400" height="500">
 				</div>
+                <div style="width:40%;float:left;"></div>			
 				<div style="width:30%;float:left;padding:10px;">     
+                  <img src="{!!asset('front-theme/images/2018_img1.jpg') !!}" width="100%" height="500">
+				</div>
+				<!-- <div style="width:30%;float:left;padding:10px;">     
 					<img src="{!!asset('front-theme/images/schoolwise_toppers.jpg') !!}" width="100%" height="707">
-				</div>
+				</div> -->
                            
                       
                         <div class="clear"></div>
