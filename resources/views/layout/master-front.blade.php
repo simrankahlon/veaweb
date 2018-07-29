@@ -71,7 +71,7 @@
         <div class="col-xs-6">
             <div class="col-md-4 footerimg"><img src="{!!asset('front-theme/images/footerlogo.jpg') !!}" width="543" height="50"></div>
             <div class="col-sm-3">
-                <p>202, Kailash Commercial Complex, Above Jolly Studio, <br>
+                <p>A2/201, Kailash Commercial Complex, Above Jolly Studio, <br>
                     Opp Dreams Mall, 
                     LBS Marg, Bhandup West
 
@@ -90,7 +90,7 @@
             <footer>
                 <div class="col-xs-6">
                     <div class="col-md-3">
-                        <p>© Copyright 2017 all rights reserved vikram's english academy |  <a href="#">Policy</a></p>
+                        <p>© Copyright 2018 all rights reserved vikram's english academy |  <a href="#">Policy</a></p>
                     </div>
                     <div class="col-md-3">
                         <p id="textright"><a href="http://www.perfectionweb.in/" target="_blank">Site by Perfection web</a></p>

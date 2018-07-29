@@ -19,7 +19,7 @@
                             <br>
                             <div class="testi2 bodytext">
                                 <p><strong>VIKRAM'S ENGLISH ACADEMY </strong><br>
-                                    202, Kailash Commercial Complex, Above Jolly Studio, <br>
+                                    A2/201, Kailash Commercial Complex, Above Jolly Studio, <br>
                                     Opp Dreams Mall, LBS Marg, <br>
                                     Bhandup West<br>
                                     <strong>Phone: 9769246667</strong><br>
