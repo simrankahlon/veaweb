@@ -10,11 +10,24 @@
                     <li><strong><br>
                             <span class="blue2">TOPPER'S TALK</span></strong><br>
                     </li>
-                    <div class="red8">Vedanti Kshirsagar, 1stIn PPS In Engish</div>
-                    <div class="video bodytext"> <p>It has been a great year being a student of Vikram’s English Academy.I have received constant positive vibes to perform well.Vikramjit Sir is a great mentor as well as a fab teacher. He was there to help me clear all my doubts a night before the board exams even at 2 am. The regular test series made me study regularly, perform well and boost up my confidence. <br>
+                    <div class="red8">Manvi Singhvi, 99/100 at ICSE 2018. All India English Topper.</div>
+                    <div class="video bodytext"> 
+                        <p>
+                            "I like a teacher who gives you something to take home to think about besides homework."<br>
+                            This quote stands true to the experience of learning English at VEA because Vikramjit Sir is an
+                            outstanding teacher who also teaches us those lessons that we would remember throughout our
+                            lives. So it is hardly surprising that I enthusiastically attended all his classes for two years. We enjoyed every minute of every lecture and those creative techniques that Sir used like teaching the
+                            rules of grammar through music. The way he explained the complex dialogues of the play and the meanings
+                            with various examples, jokes and puns made learning English a wonderful experience. The test series and
+                            endless grammar worksheets proved to be very beneficial to us. The notes provided by Sir are quite selfsufficient,up to the point and easy to understand. I only referred to these notes during exams and that helped me tremendously to keep the other clutter out of mind.<br>
                             <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a></p></div>
-                    <div class="red8">Kewal Dedhia, (1st in Billabong School- Overall) </div>
-                    <div class="video bodytext"><p>Vikram's English Academy is the ultimate place for learning English. I joined Vikram's English academy in 9th standard and since that day, my life has drastically changed.Vikram Sir makes learning so interesting that studying English is fun and enjoyable.I never wanted to miss any of his lectures. His innovative technique of teaching and jovial nature makes learning a very fascinating and delightful journey.   </p>
+                        <div class="red8">Shreya Chheda 99/100 in English at ICSE 2018. All India English Topper.</div>
+                        <div class="video bodytext">
+                            <p>
+                                It was super fun studying here. The audio-visual method of teaching helped   me remember stories very well. The keyword tests and the videos were an effective way of studying the 
+                                Merchant of Venice. Moreover, last minute grammar tips and practice of loads of topics of writing skills was quite helpful. The testing method here with large number of practice papers helped me gain confidence in my preparation and it was quite precise. In short, academics at Vikram's English
+                                Academy was very well planned to get students in line with English.
+                            </p>
                         <a href="<?php echo URL::to('/testimonials'); ?>" class="readmore">Read full testimonial</a>
                     </div>
                 </ul>
